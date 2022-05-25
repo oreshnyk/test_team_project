@@ -1,7 +1,7 @@
 <header>
-  <div>
-    <div>
-      <picture>
+  <div class="container">
+    <div class="header">
+      <picture class="bg-img">
         <source
           srcset="
             images/mobile/header-donuts_mobile.png    1x,
@@ -13,14 +13,14 @@
         <img src="/images/mobile/header-donuts_mobile.png" alt="donuts" />
       </picture>
 
-      <div>
+      <div class="logo-page">
         <svg width="96" height="43">
           <use href="/images/svg/symbol-defs.svg#icon-logo-2"></use>
         </svg>
       </div>
 
-      <nav>
-        <ul>
+      <nav class="nav">
+        <ul class="nav-list list">
           <li><a href="about-us">About us</a></li>
           <li><a href="program">Program</a></li>
           <li><a href="reviews">Reviews</a></li>
@@ -28,9 +28,14 @@
         </ul>
       </nav>
     </div>
-
     <!-- Menu mobile -->
-    <input class="hamburger-checkbox" type="checkbox" name="mobile-menu" id="mobile-menu" data-menu-button />
+    <input
+      class="hamburger-checkbox"
+      type="checkbox"
+      name="mobile-menu"
+      id="mobile-menu"
+      data-menu-button
+    />
     <div class="hamburger-lines">
       <span class="line line1"></span>
       <span class="line line2"></span>
@@ -48,17 +53,12 @@
           </li>
           <li class="mobile-menu__nav-item">
             <a href="#" class="mobile-menu__nav-link">Reviews</a>
-          </li><li class="mobile-menu__nav-item">
+          </li>
+          <li class="mobile-menu__nav-item">
             <a href="#" class="mobile-menu__nav-link">Contacts</a>
           </li>
         </ul>
       </nav>
     </div>
-
-    <button aria-expanded="false" aria-controls="menu-container" menu-button-open>
-      <svg>
-        <use width="30" height="16" href="/images/svg/symbol-defs.svg#icon-menu"></use>
-      </svg>
-    </button>
   </div>
 </header>

@@ -63,3 +63,24 @@ img {
         width: 822px;
     }
 }
+body {
+    @media screen and (max-width: 320px) {  
+            padding-left: 15px;
+            padding-right: 15px;
+        background: url(/images/mobile_fon/bg.png) no-repeat;
+        background-size: 100%;
+}
+         @media screen and (min-width: 320px) and (max-width: 769px) {
+         padding-left: 15px;
+         padding-right: 15px;         
+         background: url(/images/tablet_fon/bg.png) no-repeat;
+         background-size: 100%;
+                        }
+                @media screen and (min-width: 769px) {
+                padding-left: 15px;
+                padding-right: 15px;
+                background: url(/images/desktop_fon/bg.png) no-repeat;
+                background-size: 100%;
+                }
+       
+}

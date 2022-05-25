@@ -1,7 +1,38 @@
-<nav>
-  <ul>
-    <li>Helo</li>
-    <li>Good</li>
-    <li>Nice</li>
-  </ul>
-</nav>
+<header>
+  <div>
+    <div>
+      <picture>
+        <source
+          srcset="
+            images/mobile/header-donuts_mobile.png    1x,
+            images/mobile/header-donuts_mobile@2x.png 2x
+          "
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+        <img src="/images/mobile/header-donuts_mobile.png" alt="donuts" />
+      </picture>
+
+      <div>
+        <svg width="96" height="43">
+          <use href="/images/svg/symbol-defs.svg#icon-logo-2"></use>
+        </svg>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="about-us">About us</a></li>
+          <li><a href="program">Program</a></li>
+          <li><a href="reviews">Reviews</a></li>
+          <li><a href="contact">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <button aria-expanded="false" aria-controls="menu-container" menu-button-open>
+      <svg>
+        <use width="30" height="16" href="/images/svg/symbol-defs.svg#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
+</header>
